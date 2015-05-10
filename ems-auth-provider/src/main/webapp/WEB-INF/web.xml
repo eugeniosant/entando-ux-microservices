@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" metadata-complete="false" version="2.5">
-    <display-name>auth-provider-webapp - powered by Entando</display-name>
-    <description>auth-provider-webapp - powered by Entando</description>
+    <display-name>ems-auth-provider - powered by Entando</display-name>
+    <description>ems-auth-provider - powered by Entando</description>
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-			classpath:spring/propertyPlaceholder.xml 
-			classpath:spring/restServerConfig.xml 
-			classpath:spring/baseSystemConfig.xml 
-			classpath*:spring/aps/**/**.xml 
-			classpath*:spring/apsadmin/**/**.xml 
-			classpath*:spring/plugins/**/aps/**/**.xml 
-			classpath*:spring/plugins/**/apsadmin/**/**.xml 
+			classpath:spring/ems/propertyPlaceholder.xml 
+			classpath:spring/ems/restServerConfig.xml 
+			classpath:spring/ems/baseSystemConfig.xml 
+			classpath*:spring/ems/aps/**/**.xml 
+			classpath*:spring/ems/apsadmin/**/**.xml 
 		</param-value>
 	</context-param>
     <context-param>
         <param-name>Struts2Config</param-name>
-        <param-value>struts-default.xml,struts-plugin.xml,struts.xml,entando-struts-plugin.xml,japs-struts-plugin.xml</param-value>
+        <param-value>struts-default.xml,struts-plugin.xml,struts-ems.xml</param-value>
     </context-param>
     <context-param>
         <param-name>org.apache.tiles.impl.BasicTilesContainer.DEFINITIONS_CONFIG</param-name>

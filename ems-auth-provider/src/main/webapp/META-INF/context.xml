@@ -1,33 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Context path="/auth-provider-webapp" docBase="./auth-provider-webapp" debug="1" reloadable="false">
+<Context path="/ems-auth-provider" docBase="./ems-auth-provider" debug="1" reloadable="false">
 	
-	<Environment name="logName" value="auth-provider-webapp" type="java.lang.String" override="false" />
-	<Environment name="logFilePrefix" value="/home/eu/ENTANDO/bitbucket_eugeniosant/entando-ux-packages/auth-provider-webapp/target/log_auth-provider-webapp" type="java.lang.String" override="false" />
+	<Environment name="logName" value="ems-auth-provider" type="java.lang.String" override="false" />
+	<Environment name="logFilePrefix" value="/home/eu/ENTANDO/bitbucket_eugeniosant/entando-ux-packages/ems-auth-provider/target/log_ems-auth-provider" type="java.lang.String" override="false" />
 	<Environment name="logLevel" value="INFO" type="java.lang.String" override="false" />
 	<Environment name="logFileSize" value="200000" type="java.lang.String" override="false" />
 	<Environment name="logFilesCount" value="10" type="java.lang.String" override="false" />
 	
 	<Environment name="configVersion" value="production" type="java.lang.String" override="false" />
 	
-	<Environment name="applicationBaseURL" value="http://localhost:8080/auth-provider-webapp/" type="java.lang.String" override="false" />
-	<Environment name="resourceRootURL" value="/auth-provider-webapp/resources/" type="java.lang.String" override="false" />
-	<Environment name="protectedResourceRootURL" value="/auth-provider-webapp/protected/" type="java.lang.String" override="false" />
+	<Environment name="applicationBaseURL" value="http://localhost:8080/ems-auth-provider/" type="java.lang.String" override="false" />
+	<Environment name="resourceRootURL" value="/ems-auth-provider/resources/" type="java.lang.String" override="false" />
+	<Environment name="protectedResourceRootURL" value="/ems-auth-provider/protected/" type="java.lang.String" override="false" />
 	
-	<Environment name="resourceDiskRootFolder" value="/home/eu/ENTANDO/bitbucket_eugeniosant/entando-ux-packages/auth-provider-webapp/src/main/webapp/resources" type="java.lang.String" override="false" />
-	<Environment name="protectedResourceDiskRootFolder" value="/home/eu/ENTANDO/bitbucket_eugeniosant/entando-ux-packages/auth-provider-webapp/src/main/webapp/protected" type="java.lang.String" override="false" />
+	<Environment name="resourceDiskRootFolder" value="/home/eu/ENTANDO/bitbucket_eugeniosant/entando-ux-packages/ems-auth-provider/src/main/webapp/resources" type="java.lang.String" override="false" />
+	<Environment name="protectedResourceDiskRootFolder" value="/home/eu/ENTANDO/bitbucket_eugeniosant/entando-ux-packages/ems-auth-provider/src/main/webapp/protected" type="java.lang.String" override="false" />
 	
-	<Environment name="indexDiskRootFolder" value="/home/eu/ENTANDO/bitbucket_eugeniosant/entando-ux-packages/auth-provider-webapp/target/temp/indexdir" type="java.lang.String" override="false" />
+	<Environment name="indexDiskRootFolder" value="/home/eu/ENTANDO/bitbucket_eugeniosant/entando-ux-packages/ems-auth-provider/target/temp/indexdir" type="java.lang.String" override="false" />
 	
 	<Resource name="jdbc/portDataSource" auth="Container" 
 		type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver" 
 		maxActive="8" maxIdle="4" 
 		username="agile" password="agile" 
-		url="jdbc:derby:/home/eu/ENTANDO/bitbucket_eugeniosant/entando-ux-packages/auth-provider-webapp/target/derby/production/auth-provider-webappPort;create=true" />
+		url="jdbc:derby:/home/eu/ENTANDO/bitbucket_eugeniosant/entando-ux-packages/ems-auth-provider/target/derby/production/ems-auth-providerPort;create=true" />
 	
 	<Resource name="jdbc/servDataSource" auth="Container" 
 		type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver" 
 		maxActive="8" maxIdle="4" 
 		username="agile" password="agile" 
-		url="jdbc:derby:/home/eu/ENTANDO/bitbucket_eugeniosant/entando-ux-packages/auth-provider-webapp/target/derby/production/auth-provider-webappServ;create=true" />
+		url="jdbc:derby:/home/eu/ENTANDO/bitbucket_eugeniosant/entando-ux-packages/ems-auth-provider/target/derby/production/ems-auth-providerServ;create=true" />
 	
 </Context>
