@@ -1,21 +1,12 @@
 # entando-ux-packages
 
-```entando-ux-packages``` is an other fundamental part of the Entando platform project. It provides samples of Entando based applications.
+```entando-ux-microservices``` is an project that contains a "poc" of the architecture of microservice for the next version of entando (5.0). 
 
-The **Entando UX-Packages** project includes the following modules:
+The **Entando UX-Microservices** project includes the following modules:
 
-* **admin-console-webapp**, sample of an Entando application based on engine and admin-console core components 
-(see [entando-core](https://github.com/entando/entando-core)), 
-useful to develop and test plugins components (see [entando-components] (https://github.com/entando/entando-components)) 
-and other vertical applications extending engine and admin console features.
+* **admin-console-webapp**, sample of an Entando microservice based on engine and admin-console core components 
+(see [entando-core](https://github.com/entando/entando-core)), useful to provides services of a single plugin/functionality (in this case the services of the plugin "Web Dynamic Form").
 
-* **portalexample**, sample of an Entando portal application based on ```engine```, ```admin-console```, ```portal-ui core``` components. 
-It's useful to develop and test vertical applications extending engine, admin console and portal-ui features.
+* **ems-auth-provider**, sample of an Entando microservice useful to provides services of an "Authentication Provider", used by any other entando instance (Microservice or not).
 
-For latest updated news, please visit the company websites: http://www.entando.com.
-
-For any support request, please use [Twitter] (https://twitter.com/Entando).
-
-Enjoy!
-
-*The Entando Team*
+* **portalexample**, sample of an Entando portal application based on ```engine```, ```admin-console```, ```portal-ui core``` components. In "entando-ux-microservices" it consume the services provided by "admin-console-webapp" and "ems-auth-provider".
