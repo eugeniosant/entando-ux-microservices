@@ -1,7 +1,0 @@
-<project name="auth-provider-webapp" default="WAR-build" basedir=".">
-	<description>auth-provider-webapp - Build file</description>
-	
-	<import file="buildProperties.xml"/>
-	<import file="buildTasks.xml"/>
-	
-</project>
