@@ -1,4 +1,4 @@
-# entando-ux-packages
+# entando-ux-microservices
 
 ```entando-ux-microservices``` is an project that contains a "poc" of the architecture of microservice for the next version of entando (5.0). 
 
